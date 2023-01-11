@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.oopsapplication"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+
+    //noinspection GradleDeprecatedConfiguration
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible,GradleCompatible,GradleDeprecatedConfiguration
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    //noinspection GradleDeprecatedConfiguration
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //noinspection GradleCompatible,GradleDeprecatedConfiguration
+    compile 'com.android.support:design:25.3.1'
+    //noinspection GradleCompatible,GradleDeprecatedConfiguration
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    //noinspection GradleDeprecatedConfiguration
+    compile 'com.getbase:floatingactionbutton:1.9.0'
+    //noinspection GradleDeprecatedConfiguration
+    compile 'com.wdullaer:materialdatetimepicker:1.2.1'
+    //noinspection GradleDeprecatedConfiguration
+    compile 'com.bignerdranch.android:recyclerview-multiselect:+'
+    //noinspection GradleDeprecatedConfiguration
+    compile 'com.wrapp.floatlabelededittext:library:0.0.6'
+    //noinspection GradleDeprecatedConfiguration
+    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+
+    //noinspection GradleDeprecatedConfiguration
+    compile 'com.google.firebase:firebase-auth:10.0.1'
+    //noinspection GradleDeprecatedConfiguration
+    compile 'com.firebaseui:firebase-ui:2.0.1'
+    //noinspection GradleDeprecatedConfiguration
+    compile 'com.firebaseui:firebase-ui-auth:2.0.1'
+    //noinspection GradleDeprecatedConfiguration
+    compile('com.facebook.android:facebook-android-sdk:4.23.0')
+    //noinspection GradleDeprecatedConfiguration
+    compile("com.twitter.sdk.android:twitter-core:3.0.0@aar") { transitive = true }
+    //noinspection GradleDeprecatedConfiguration
+    testCompile 'junit:junit:4.12'
+}
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+/* dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.firebaseui:firebase-ui:2.0.1'
+    implementation 'com.firebaseui:firebase-ui-auth:2.0.1'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+} */

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oopsapplication">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".academicscratch"></activity>
+        <activity android:name=".choresscratch" />
+        <activity android:name=".workscratch" />
+        <activity android:name=".notes" />
+        <activity android:name=".books" />
+        <activity android:name=".studytodo" />
+        <activity android:name=".academicdashboard" />
+        <activity android:name=".chorestodo" />
+        <activity android:name=".choresdashboard" />
+        <activity android:name=".worktodo" />
+        <activity android:name=".schedule" />
+        <activity android:name=".decision" />
+        <activity android:name=".workdashboard" /> <!-- <activity android:name=".AlarmCursorAdapter"></activity> -->
+        <!-- <activity android:name=".AddReminderActivity" /> -->
+        <!-- <activity android:name=".MainActivityReminder" /> -->
+        <activity android:name=".others" />
+        <activity android:name=".medical" />
+        <activity android:name=".common_dashboard" />
+        <activity android:name=".grocery" />
+        <activity android:name=".thecalendar" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".SignedInActivity" />
+        <activity
+            android:name=".FirebaseAuthActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivityReminder" />
+        <activity
+            android:name=".AddReminderActivity"
+            android:label="@string/title_activity_add_reminder"
+            android:parentActivityName=".MainActivityReminder"
+            android:theme="@style/AppTheme">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_application_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".data.AlarmReminderProvider"
+            android:authorities="com.example.oopsapplication"
+            android:exported="false" />
+
+        <service
+            android:name=".rem.ReminderAlarmService"
+            android:exported="false" />
+    </application>
+
+</manifest>

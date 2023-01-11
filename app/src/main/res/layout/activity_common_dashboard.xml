@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87cefa"
+    tools:context=".common_dashboard">
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginBottom="335dp"
+        android:background="#FBCC3D"
+        android:onClick="gotogrocery"
+        android:text="GROCERY" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginBottom="197dp"
+        android:background="#FBCC3D"
+        android:onClick="gotoothers"
+        android:text="OTHERS" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginBottom="266dp"
+        android:background="#FBCC3D"
+        android:onClick="gotomedical"
+        android:text="MEDICAL RECORD" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginBottom="404dp"
+        android:background="#FBCC3D"
+        android:onClick="gototodo"
+        android:text="TO-DO" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="283dp"
+        android:layout_height="89dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="509dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#9F0505"
+        android:textSize="24sp" />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/officebg1"
+    tools:context=".workdashboard">
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="337dp"
+        android:background="#FBCC3D"
+        android:onClick="gotoworktodo"
+        android:text="WORK TO-DO"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="268dp"
+        android:background="#FBCC3D"
+        android:onClick="gotoschedule"
+        android:text="SCHEDULE" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="199dp"
+        android:background="#FBCC3D"
+        android:onClick="gotodecision"
+        android:text="DECISIONS" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="292dp"
+        android:layout_height="160dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="428dp"
+        android:fontFamily="@font/archivo_black"
+        android:gravity="center"
+        android:text="WORK DASHBOARD"
+        android:textColor="#FF0000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="130dp"
+        android:background="#FBCC3D"
+        android:onClick="gotoscratch"
+        android:text="SCRATCHPAD" />
+
+</RelativeLayout>
